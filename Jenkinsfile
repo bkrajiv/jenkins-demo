@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat '.\\mvnw.cmd clean package'
+                sh '.\\mvnw.cmd clean package'
             }
         }
 
