@@ -20,17 +20,18 @@ pipeline {
 
 
         stage('Check Tools') {
-    steps {
-        sh '''
-            echo "Java version:"
-            java -version
-
-            echo "Maven version:"
-            mvn -version
-
-            echo "Maven location:"
-            which mvn
-        '''
-    }
-    }
+                steps {
+                        sh '''
+                            echo "Java version:"
+                            java -version
+                
+                            echo "Maven version:"
+                            mvn -version
+                
+                            echo "Maven location:"
+                            which mvn
+                        '''
+                    }
+                }
+}
 }
