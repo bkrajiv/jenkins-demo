@@ -11,9 +11,10 @@ pipeline {
 
         stage('Build') {
             steps {
-      //  sh './mvnw clean package'    
+      //  sh './mvnw clean package'    permission denied
                  sh 'chmod +x mvnw'
                  sh './mvnw clean package'
+                 sh 'mvn clean package' 
             }
         }
 
